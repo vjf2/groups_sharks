@@ -15,3 +15,4 @@ counts <- table(sightings$Dolphin.ID)
 
 ind_group_sizes$n_sightings <- counts[match(ind_group_sizes$Dolphin.ID, names(counts))]
 
+ind_group_sizes$Sex <- dolphins$Sex[match(ind_group_sizes$Dolphin.ID, dolphins$Dolphin.ID)]
